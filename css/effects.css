@@ -1,0 +1,163 @@
+html {
+    scroll-behavior: smooth
+}
+
+a,
+input,
+textarea {
+    transition: color .3s, background-color .3s, border-color .3s, box-shadow .3s
+}
+
+.block2 a {
+    color: gray;
+    text-decoration: none
+}
+
+.block2 a:hover,
+.block2 a:focus-visible {
+    color: var(--accent)
+}
+
+.q1 {
+    transition: border-color .3s
+}
+
+.q1:hover {
+    border-color: var(--accent)
+}
+
+.q1:hover .q2,
+.q1:hover .q3 {
+    color: var(--accent)
+}
+
+.button-link {
+    transition: background-color .3s, color .3s, transform .3s
+}
+
+.button-link:hover,
+.button-link:focus-visible {
+    background: var(--accent-dark);
+    color: #fff
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    border-bottom-color: var(--accent);
+    box-shadow: 0 2px 0 var(--accent)
+}
+
+.b7,
+.b8,
+.b9,
+.b0 {
+    transition: filter .3s
+}
+
+.b7:hover,
+.b8:hover,
+.b9:hover,
+.b0:hover {
+    filter: brightness(.86)
+}
+
+.b2 img {
+    transition: transform .3s
+}
+
+.b2>div:hover img {
+    transform: scale(1.12)
+}
+
+.work-hover {
+    position: absolute;
+    inset: 0;
+    background: rgb(0 0 0 / 72%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .4s
+}
+
+.boxs>a:hover .work-hover,
+.boxs>a:focus-visible .work-hover {
+    opacity: 1
+}
+
+.social span:hover {
+    background: var(--accent);
+    color: white
+}
+
+.team-card .team-skills {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s, visibility .4s
+}
+
+.team-card:hover .team-skills,
+.team-card:focus-within .team-skills {
+    opacity: 1;
+    visibility: visible
+}
+
+.team-card:hover .team-info,
+.team-card:focus-within .team-info {
+    opacity: 0;
+    visibility: hidden
+}
+
+.footer-top .button-link:hover {
+    background: var(--accent);
+    color: white
+}
+
+.footer-social a:hover,
+.team-social a:hover {
+    background: var(--accent);
+    color: white
+}
+
+@media (hover:none) {
+
+    .b7:hover,
+    .b8:hover,
+    .b9:hover,
+    .b0:hover {
+        filter: none
+    }
+
+    .b2>div:hover img {
+        transform: none
+    }
+
+    .boxs>a:hover .work-hover {
+        opacity: 0
+    }
+
+    .team-card:hover .team-skills {
+        opacity: 0;
+        visibility: hidden
+    }
+
+    .team-card:hover .team-info {
+        opacity: 1;
+        visibility: visible
+    }
+}
+.team-card:hover .team-info h2,
+.team-card:hover .team-info p {
+    color: white;
+}
+.team-social a:hover {
+    color: tomato;
+}
+
+.footer-top button:hover {
+    background-color: tomato;
+    color: white;
+}
